@@ -2,19 +2,29 @@
 <html lang="en">
 
 <!--
-WRITTEN BY: Your name here
-EMAIL: Your email here
+WRITTEN BY: Tenzin Tsundue
+EMAIL: ttsundue@uci.edu
 -->
 
 <head>
   <meta charset="utf-8">
-  <meta name="author" content="Your name here">
-  <meta name="description" content="description of your page">
+  <meta name="author" content="Tenzin Tsundue">
+  <meta name="description" content="Home page">
   
   <!-- Linking css stylesheet -->
   <link rel="stylesheet" href="styles.css">
-   <!-- you would also link to Bootstrap here! -->
-  <title>Tenzin's Port</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+  <!-- Linking Bootstrap -->
+  <link rel="stylesheet" 
+  href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" 
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+  crossorigin="anonymous">
+
+  <title>Tenzin's Portfolio</title>
 </head>
 <body>
   <!-- <p>
@@ -22,39 +32,29 @@ EMAIL: Your email here
        W3C validator
     </a>
   </p> -->
-  <div class="container">
-    <h1 class="title">Hello, I'm Tenzin!</h1>
-    <div class="external-links">
-      <a href="https://github.com/tentsundue">GitHub</a>
-      <a href="https://www.linkedin.com/in/tenzin-tsundue-658238226/">LinkedIn</a>
-    </div>
-
-    <div class="about">
-      <p>I'm a 3rd year Software Engineering Major at the University of California, Irvine.</p>
-    </div>
-    
-
-    <img src="myPhoto.jpeg" class="mugshot" alt="Picture of Tenzin">
-
-
-
-
-  </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">Home</a>
   
-  <div>
-    <h2>Check out some demo videos of my projects!</h2>
-    <iframe 
-    width="560" 
-    height="315" 
-    src="https://www.youtube.com/embed/TCsVtfeLKxw?si=01yav0zLyTWFix50" 
-    title="YouTube video player" 
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-    allowfullscreen></iframe>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item-active">
+          <a class="nav-link" href="projects.html">Projects</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="media" style="margin-top: 200px; margin-left: 30px; font-family: 'Roboto Condensed', sans-serif;">
+    <img src="images/myPhoto.jpeg" class="mugshot img-fluid" alt="Picture of Tenzin">
+    <div class="media-body" style="margin-top: 20px;">
+      <h1 class="mt-0" style="font-size: 100px;">Hey, I'm Tenzin!</h1>
+      <p style="font-size: 50px">I'm a third year Software Engineering major at the University of California, Irvine</p>
+      <div >
+        <a class="btn btn-primary btn-lg" style="margin-right: 20px; margin-bottom: 10px;;" href="https://github.com/tentsundue">GitHub</a>
+        <a class="btn btn-primary btn-lg" style="margin-right: 20px; margin-bottom: 10px;" href="https://www.linkedin.com/in/tenzin-tsundue-658238226/">LinkedIn</a>
+      </div>
+    </div>
   </div>
-
-
-  
 
 </body>
 </html>

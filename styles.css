@@ -3,7 +3,7 @@ h1, p{
 }
 
 body {
-    background-color: rgba(131, 127, 127, 0.562);
+    background-color: rgba(243, 222, 209, 0.562);
 }
 .intro{
     margin-top: 100px;
@@ -27,6 +27,7 @@ body {
     border-style: groove;
     border-width: 30px;
     align-items: center;
+    border-color: rgba(253, 215, 193, 0.562);
 }
 
 .hello {
@@ -72,7 +73,8 @@ body {
 
 .contactHeader {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 .contact-form {

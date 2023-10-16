@@ -16,6 +16,7 @@
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
     crossorigin="anonymous">
 
+    <!-- Linking css stylesheet -->
     <link rel="stylesheet" href="styles.css">
 
     <title>Tenzin's Portfolio</title>
@@ -26,11 +27,8 @@
   integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
   crossorigin="anonymous">
   </script>
-  <!-- <p>
-    <a href="http://validator.w3.org/check?uri=referer">
-       W3C validator
-    </a>
-  </p> -->
+
+  <!-- Navbar item at the top of the screen (Should include Home, Projects, and Contact tabs that each redirect the user to a different page) -->
   <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(248, 217, 197);">
     <a class="navbar-brand" aria-current="page" href="index.html">Home</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,19 +49,21 @@
     </div>
   </nav>
 
-    <h1 class="contactHeader"><strong>Contact Me!</strong></h1>
+  <!-- Title for the Contact page, introduces the main purpose -->
+  <h1 class="contactHeader"><strong>Contact Me!</strong></h1>
 
-    <form class="contact-form">
-        <div class="form-group">
-            <label for="inputEmail">Email address</label>
-            <input type="email" class="form-control" id="inputEmail" placeholder="Enter email">
-        </div>
-        <div class="form-group">
-            <label for="inputMessage">Message</label>
-            <textarea class="form-control" id="inputMessage" rows="3"></textarea>
-        </div>
-        <button type="button" class="btn btn-primary">Submit</button>
-    </form>
+  <!-- Contact form layout, non-functional as of now -->
+  <form class="contact-form">
+      <div class="form-group">
+          <label for="inputEmail">Email address</label>
+          <input type="email" class="form-control" id="inputEmail" placeholder="Enter email">
+      </div>
+      <div class="form-group">
+          <label for="inputMessage">Message</label>
+          <textarea class="form-control" id="inputMessage" rows="3" placeholder="You Message Here"></textarea>
+      </div>
+      <button type="button" class="btn btn-primary">Submit</button>
+  </form>
 </body>
 </html>
 

@@ -1,9 +1,11 @@
 h1, p{
+    color: aliceblue;
     font-family: 'Roboto Condensed', sans-serif;
 }
 
 body {
     background-color: rgba(2, 2, 2, 0.801);
+    /* backdrop-filter: blur(30px); */
 }
 
 .my-nav {
@@ -16,6 +18,11 @@ body {
 
 }
 
+@media (min-width: 1200px) {
+    .container{
+        max-width: 1700px;
+    }
+}
 /* FILEPATH: /C:/Users/tents/Portfolio/styles.css */
 /* BEGIN: scrollbar-style */
 
@@ -43,6 +50,25 @@ body {
 
 /* END: scrollbar-style */
 
+.skills-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+
+}
+
+.skills-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-box img {
+    margin: 10px;
+    width: 100px;
+}
 
 .introbox {
     margin-top: 100px;
@@ -52,6 +78,8 @@ body {
     text-align: center;
     color: aliceblue;
     text-shadow: 2px 2px 4px #000000;
+    justify-content: center;
+    align-items: center;
 }
 
 .info {
@@ -64,6 +92,7 @@ body {
 .info h2 {
     text-align: center;
     color:aliceblue;
+    line-height: 1.5;
 }
 
 .socials {
@@ -82,7 +111,7 @@ body {
 .aboutme {
     margin-top: 50px;
     margin-left: 20px;
-    padding: 40px;
+    padding: 30px;
 
     text-align: center;
     /* text-shadow: 2px 2px 4px #000000; */
@@ -95,6 +124,10 @@ body {
     
     background-color: rgba(0, 0, 0, 0.5);
     color: aliceblue;
+}
+
+.aboutme h4 {
+    line-height: 2;
 }
 
 .badges {
@@ -133,7 +166,7 @@ body {
 
     margin-left: auto;
     margin-right: auto;
-    margin-top: 170px;
+    margin-top: 300px;
 }
 
 hr{
@@ -142,7 +175,7 @@ hr{
 
 /* Projects portion */
 
-.projects-title {
+.section-title {
     color: aliceblue;
     margin-bottom: 20px;
 }
@@ -159,3 +192,13 @@ hr{
     margin: 10px;
 }
 
+
+/* Contact Form Portion */
+.contact-box {
+    background-color: rgba(97, 93, 93, 0.822);
+    padding: 20px;
+
+    border-radius: 30px;
+
+    box-shadow: 10px 10px 5px rgb(22, 22, 22);
+}

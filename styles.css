@@ -1,3 +1,8 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+
 h1, p{
     color: aliceblue;
     font-family: 'Roboto Condensed', sans-serif;
@@ -54,7 +59,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 50px;
+    margin-top: 20px;
 
 }
 
@@ -179,6 +184,7 @@ hr{
     color: aliceblue;
     margin-bottom: 20px;
 }
+
 .technologies-used {
     display: flex;
     flex-direction: row;
@@ -192,13 +198,29 @@ hr{
     margin: 10px;
 }
 
+.projects-row {
+    padding: 30px;
+}
+.card:hover {
+    box-shadow: 0 0 15px rgb(253, 16, 16);
+}
+
+.card-text {
+    color: black;
+}
 
 /* Contact Form Portion */
+
+.contact-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
 .contact-box {
     background-color: rgba(97, 93, 93, 0.822);
-    padding: 20px;
-
+    padding: 30px;
     border-radius: 30px;
-
+    width: 1000px;
     box-shadow: 10px 10px 5px rgb(22, 22, 22);
 }

@@ -22,6 +22,11 @@ EMAIL: ttsundue@uci.edu
   integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
   crossorigin="anonymous">
 
+  <!-- Linking Jquery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
   <!-- Linking css stylesheet -->
   <link rel="stylesheet" href="styles.css">
   
@@ -44,9 +49,6 @@ EMAIL: ttsundue@uci.edu
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#projects">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -84,8 +86,43 @@ EMAIL: ttsundue@uci.edu
         <!-- Profile Picture -->
         <div class="col-lg-6">
           <img src="images/profilepic.jpg" alt="Tenzin Tsundue" class="img-fluid profilepic">
+          <div class="contact-btn">
+            <button type="button" class="btn btn-primary btn-lg" style="width: 150px;" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Contact</button>
+          </div>
         </div>
       </div>
+
+      <div class="contact-modal">
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="recipient-name" class="col-form-label">Email:</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="form-group">
+                    <label for="message-text" class="col-form-label">Message:</label>
+                    <textarea class="form-control" id="message-text"></textarea>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Send message</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
 
       <!-- DIVIDER -->
       <hr class="hr hr-blurry bg-white" />
@@ -110,198 +147,74 @@ EMAIL: ttsundue@uci.edu
         </div>
       </div>
 
-
-      
       <hr class="hr hr-blurry bg-white" />
       
       <!-- PROJECTS -->
       <h1 id="projects" class="section-title">Projects I've Worked On So Far!</h1>
-      <div class="card-deck projects-container projects-row">
-        <div class="card" style="width: 18rem;">
-          <img src="/images/jolibee-placeholder.png" class="card-img-top" alt="Portrait Picture of Tenzin Tsundue">
-          <div class="card-body">
-            <h5 class="card-title">Discord Bot - League of Legends</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item technologies-used">
-              <img src="images/PythonIcon.png" alt="Python logo" class="pythonIcon">
-              <img src="images/discordIcon.png" alt="Discord logo" class="discordIcon">
-              <img src="images/riotIcon.png" alt="Riot Games logo" class="riotgamesLogo">
-            </li>
-          </ul>
-          <div class="card-body">
-            <a href="#" class="btn btn-primary">Check it out!</a>
-          </div>
-        </div>
+      
+     
+      <div class="wrapper">
 
-        <!-- GoalPoints -->
-        <div class="card" style="width: 18rem;">
-          <img src="/images/jolibee-placeholder.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">GoalPoints</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+       <!-- GoalPoints -->
+      <div class="project-box">
+        <a href="https://github.com/tentsundue/GoalPoints" target="_blank">
+          <div class="project-img">
+            <img src="images/goalpoints.png" alt="GoalPoints logo" class="img-fluid">
           </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item technologies-used">
-              <img src="/images/firebaseIcon.png" alt="Google Firebase logo" class="gfblogo">
-              <img src="images/reactIcon.png" alt="React (Native) logo" class="reactIcon">
-              <img src="images/typescriptIcon.png" alt="Riot Games logo" class="riotgamesLogo">
-            </li>
-          </ul>
-          <div class="card-body">
-            <a href="#" class="btn btn-primary">Check it out!</a>
+          <div class="project-name">
+            <h2>GoalPoints</h2>
           </div>
-        </div>
+        </a>
+      </div>
 
-        <!-- SpotiEvent -->
-        <div class="card" style="width: 18rem;">
-          <img src="/images/jolibee-placeholder.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">SpotiEvent</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <!-- SpotiEvent -->
+      <div class="project-box">
+        <a href="https://github.com/thinhtn3/IrvineHacks" target="_blank">
+        <div class="project-img">
+          <img src="images/spotiEventHomePage.png" alt="SpotiEvent Home Screen" class="img-fluid">
+        </div>
+          <div class="project-name">
+            <h2>SpotiEvent</h2>
           </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item technologies-used">
-              <img src="images/nodejs.png" alt="NodeJs logo" class="pythonIcon">
-              <img src="images/expressicon.jpg" alt="ExpressJS Icon" class="expressIcon">
-              <img src="images/reactIcon.png" alt="React logo" class="reactIcon">
-            </li>
-          </ul>
-          <div class="card-body">
-            <a href="#" class="btn btn-primary">Check it out!</a>
-          </div>
+        </a>
         </div>
 
         <!-- ZotRequisites -->
-        <div class="card" style="width: 18rem;">
-          <img src="/images/jolibee-placeholder.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">ZotRequisites</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <div class="project-box">
+          <a href="https://github.com/tentsundue/ZotRequisites" target="_blank">
+          <div class="project-img">
+            <img src="images/zotreqsPrereqsPage.JPG" alt="ZotRequisites Home Screen" class="img-fluid">
           </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item technologies-used">
-              <img src="images/html-Icon.png" alt="HTML logo" class="HTMLIcon">
-              <img src="images/css-icon.webp" alt="CSS logo" class="CSSIcon">
-              <img src="images/javascriptlogo.jpg" alt="JavaScript logo" class="img-fluid">
-            </li>
-          </ul>
-          <div class="card-body">
-            <a href="#" class="btn btn-primary">Check it out!</a>
+            <div class="project-name">
+              <h2>ZotRequisites</h2>
+            </div>
+          </a>
           </div>
-        </div>
-        <!-- ZotRequisites -->
-      </div>
-      
-      <div class="card-deck projects-container projects-row">
-        <!-- Project 5 -->
-        <div class="card" style="width: 18rem;">
-          <img src="/images/jolibee-placeholder.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Project 5</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item technologies-used">
-              <img src="images/html-Icon.png" alt="HTML logo" class="HTMLIcon">
-              <img src="images/css-icon.webp" alt="CSS logo" class="CSSIcon">
-              <img src="images/javascriptlogo.jpg" alt="JavaScript logo" class="img-fluid">
-            </li>
-          </ul>
-          <div class="card-body">
-            <a href="#" class="btn btn-primary">Check it out!</a>
-          </div>
-        </div>
 
-      <!-- Project 6 -->
-      <div class="card" style="width: 18rem;">
-        <img src="/images/jolibee-placeholder.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Project 6</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item technologies-used">
-            <img src="images/html-Icon.png" alt="HTML logo" class="HTMLIcon">
-            <img src="images/css-icon.webp" alt="CSS logo" class="CSSIcon">
-            <img src="images/javascriptlogo.jpg" alt="JavaScript logo" class="img-fluid">
-          </li>
-        </ul>
-        <div class="card-body">
-          <a href="#" class="btn btn-primary">Check it out!</a>
-        </div>
-      </div>
+          <!-- LeagueBot -->
+          <div class="project-box">
+            <a href="https://github.com/tentsundue/LeagueofLegendsDiscordBot" target="_blank">
+            <div class="project-img">
+              <img src="images/loeagueBotExamplePic.JPG" alt="LeagueBot Screen showing useable commands" class="img-fluid">
+            </div>
+              <div class="project-name">
+                <h2>LeagueBot</h2>
+              </div>
+            </a>
+            </div>
 
-      <!-- Project 7 -->
-      <div class="card" style="width: 18rem;">
-        <img src="/images/jolibee-placeholder.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Project 7</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item technologies-used">
-            <img src="images/html-Icon.png" alt="HTML logo" class="HTMLIcon">
-            <img src="images/css-icon.webp" alt="CSS logo" class="CSSIcon">
-            <img src="images/javascriptlogo.jpg" alt="JavaScript logo" class="img-fluid">
-          </li>
-        </ul>
-        <div class="card-body">
-          <a href="#" class="btn btn-primary">Check it out!</a>
-        </div>
+            <!-- SleepTracker -->
+            <div class="project-box">
+              <a href="https://github.com/uci-inf-133/a4-sleep-tracker-treasurehunters" target="_blank">
+              <div class="project-img">
+                <img src="images/goalpoints.png" alt="SleepTracker Screens" class="img-fluid">
+              </div>
+                <div class="project-name">
+                  <h2>Sleep Tracker</h2>
+                </div>
+              </a>
+              </div>
       </div>
-
-      <!-- Project 8 -->
-      <div class="card" style="width: 18rem;">
-        <img src="/images/jolibee-placeholder.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Project 6</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item technologies-used">
-            <img src="images/html-Icon.png" alt="HTML logo" class="HTMLIcon">
-            <img src="images/css-icon.webp" alt="CSS logo" class="CSSIcon">
-            <img src="images/javascriptlogo.jpg" alt="JavaScript logo" class="img-fluid">
-          </li>
-        </ul>
-        <div class="card-body">
-          <a href="#" class="btn btn-primary">Check it out!</a>
-        </div>
-      </div>
-    </div>
-    
-    
-    <!-- DIVIDER 2 -->
-    <hr class="hr hr-blurry bg-white" />
-    
-    <!-- CONTACT FORM -->
-    <h1 id="contact" class="projects-title">Contact</h1>
-    <div class="contact-container">
-      <div>
-        <h3 style="color: aliceblue;">Have a question or want to work together?</h3>
-        <h3 style="color: aliceblue; margin-top: 20px;">Feel free to reach out to me!</h3>
-      </div>
-      
-      <form class="contact-box">
-        <div style="color:aliceblue;" class="form-group">
-          <label for="exampleInputEmail1">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-        </div>
-        <div style="color:aliceblue;" class="form-group">
-          <label for="exampleInputEmail1">Subject</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-        </div>
-        <div style="color:aliceblue" class="form-group">
-          <label for="exampleInputPassword1">Message</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>
-        <div class="text-center">
-          <button type="submit" class="btn btn-primary contact-submit">Submit</button>
-        </div>
-      </form>
-    </div>
 
   </div>
 
